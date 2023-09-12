@@ -1,0 +1,42 @@
+:root{
+    --dark:#16191C;
+    --dark-x: #1e2126;
+    --light: #00A6FF;
+}
+
+.color{
+    background-color: black !important;
+}
+
+.navbar-toggler{
+    background-color: white!important;
+}
+
+.navbar-brand{
+    color: white!important;
+}
+.la_v{
+    color: rgb(68, 152, 226);
+    font-size: 20px;
+}
+
+.btn{
+    min-height: 3.125rem;
+    font-weight: 600;
+}
+
+.text-light{ color: var(--light)!important;}
+.bg-dark{background-color: var(--dark)!important;}
+.bg-dark-x{background-color: var(--dark-x)!important;}
+button.bg-dark-x:hover{background-color: var(--light) !important}
+
+.body{
+    font-family:'Spartan',sans-serif;
+    font-weight: 300;
+    color: var(--light);
+}
+
+body{
+    background-color: #8bc4fe!important;
+    background-size: 100vh , 100vw;
+}

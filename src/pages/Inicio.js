@@ -6,17 +6,15 @@ import Productos from '../componentes/productos';
 
 function Inicio() {
     return (
-        <div className='Inicio'>
+        <div className='Inicio ' class='body'>
             <Menu />
-            <img src={jairo} alt="imagen" style={{ width: "100vw" }}></img>
-            <h1>Virtual Wallet</h1>
+            <img src={jairo} alt="imagen" style={{ width: "100vw", height:"50vw"}}></img>
+          
+            <h1 class="card text-center"></h1>
+            
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-
-
-
-                        
                         
                     </div>
                     <div class="carousel-item">
@@ -36,7 +34,7 @@ function Inicio() {
                 </button>
             </div>
             <Productos />
-            <Footer />
+            
         </div>
 
 
