@@ -4,8 +4,7 @@ function Productos() {
     return (
         <div className='Productos'>
             <div class="card-group">
-                <div class="card">
-                    
+                <div class="card boton">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -28,7 +27,7 @@ function Productos() {
                     
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <a  href="/saldo">Saldo</a>
                         </div>
                         <div class="card-footer">
                             <small class="text-body-secondary">Last updated 3 mins ago</small>

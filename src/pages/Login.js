@@ -1,9 +1,12 @@
 import React from 'react';
+import FormularioInicio from '../componentes/Login';
 
 function Login(){
     return(
-        <h1>Hola mundo desde el login</h1>
+     <div className='p-0 m-0'>
+      <FormularioInicio/>
+     </div>
     );
 }
 
-export default Login;
+export default Login;        

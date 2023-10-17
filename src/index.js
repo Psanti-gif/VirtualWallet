@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './routes/App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import '../src/styles/styles.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
