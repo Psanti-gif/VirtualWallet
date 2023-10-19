@@ -9,7 +9,7 @@ import imagen2 from '../imagenes/imagen2.jpg'
 function SobreNosotros() {
     return (
 
-        <body style={{ backgroundColor: "#DADADA" }}>
+        <body style={{ backgroundColor: "#F1F0F0", paddingLeft:"9px" }}>
             <div id="carouselExampleInterval" class="carousel slide pt-0 pb-2" style={{padding:"100px"}} data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="1000">
@@ -31,8 +31,8 @@ function SobreNosotros() {
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <div style={{ textAlign: "center", color: "white" }}>Sobre Nosotros</div>
-            <div style={{ textAlign: "center", color: "black" }}><br />VirtualWallet es una pequeña empresa. Que busca ser una
+            <div style={{ textAlign: "center", color: "black" }}>Sobre Nosotros</div>
+            <div style={{ textAlign: "center", color: "grey" }}><br />VirtualWallet es una pequeña empresa. Que busca ser una
                 solución amena a algunos de tus problemas financieros <br />
                 <br />En VirtualWallet te queremos dar una acondicionamiento adecuado, haciendo uso de interfaces interactivas y logicas para los usuarios <br />
                 <br />Tenemos pensado expandirnos más, con la ayuda de tu uso frecuente en nuestra aplicación <br />

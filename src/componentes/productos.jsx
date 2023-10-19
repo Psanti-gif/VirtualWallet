@@ -10,7 +10,7 @@ function Productos() {
                 <div class="card">
                     <div class="card text-center">
                         <div class="card-body">
-                            <h5 class="card-title">CUENTAS VINCULADAS</h5>
+                            <h5 class="card-title"> CUENTAS VINCULADAS</h5>
                             <p class="card-text">
                             <img src={Bancos} height={"120vh"} style={{width:"23vh"}} alt="" />
                             </p>
@@ -24,7 +24,7 @@ function Productos() {
                 <div class="card">
                     <div class="card text-center">
                         <div class="card-body">
-                            <h5 class="card-title">TRANSACCIONES</h5>
+                            <h5 class="card-title"><b style={{color:"white"}}> .</b> TRANSACCIONES<b style={{color:"white"}}> .</b> </h5>
                             <p class="card-text">
                             <img src={Saldoimg} height={"120vh"} style={{width:"23vh"}} alt="" />
                             </p>
@@ -37,7 +37,7 @@ function Productos() {
                 <div class="card">
                     <div class="card text-center">
                         <div class="card-body">
-                            <h5 class="card-title">SALDO</h5>
+                            <h5 class="card-title"><b style={{color:"white"}}> ...........</b>SALDO<b style={{color:"white"}}>.........</b></h5>
                             <p class="card-text">
                             <img src={Transacciones} height={"120vh"} style={{width:"23vh"}} alt="" />
                             </p>
@@ -45,10 +45,10 @@ function Productos() {
                         <div class="card-footer">
                         <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2">Seleccionar</button>
                         </div>
-                    </div>
-                </div>
+                    </div> 
+                </div> 
             </div>
-            <Footer></Footer>
+          
         </div>
 
     );

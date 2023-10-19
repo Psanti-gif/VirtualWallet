@@ -4,11 +4,14 @@ import jairo from '../imagenes/high-rise-buildings-free-photo.jpeg';
 import Footer from '../componentes/footer'
 import Productos from '../componentes/productos';
 
+
 function Inicio() {
     return (
-        <div className='Inicio ' class='body'>
+        <div className='Inicio ' class='body' style={{paddingLeft: '9px'}}>
             <Menu />
-            <img src={jairo} alt="imagen" style={{ width: "100vw", height:"50vw"}}></img>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+            <img src={jairo} alt="imagen" style={{ width: "90vw", height:"50vh"}}></img>
+            </div>
           
             <h1 class="card text-center"></h1>
             
@@ -34,7 +37,7 @@ function Inicio() {
                 </button>
             </div>
             <Productos />
-            
+            <Footer></Footer>
         </div>
 
 
