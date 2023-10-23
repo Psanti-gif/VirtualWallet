@@ -6,7 +6,7 @@ import jairo from '../imagenes/high-rise-buildings-free-photo.jpeg';
 function Sobrenosotros() {
     return (
         <div style={{ backgroundColor: "#F1F0F0" }}>
-            <div className='Inicio ' class='body' style={{paddingLeft: '9px'}}>
+            <div className='Inicio ' class='body' style={{paddingLeft: '0px'}}>
                 <Menu />
             
 
@@ -15,6 +15,7 @@ function Sobrenosotros() {
             </div>
             <div>
                 <SobreNosotros />
+                
             </div>
 
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import jesid from '../imagenes/jesid.jpg';
-import migue from '../imagenes/miggeee.jpg';
+import migue from '../imagenes/migueldroxx.jpg';
 import santi from '../imagenes/santi.jpg';
 
 function Footer() {
@@ -21,7 +21,7 @@ function Footer() {
                             <div class="col-4 col-lg-4 col-md-4"style={{marginTop:"20px"}}>
                                 <div class="card" style={{ width: "20vh;" }}>
                                     <img src={jesid} class="card-img-top" alt="..." />    
-                                    <p>Jesid Lopez Giraldo <br />
+                                    <p>Jesid Lopez Alvarez <br />
                                     (Manager, CGO)</p>
                                 </div>
                             </div>

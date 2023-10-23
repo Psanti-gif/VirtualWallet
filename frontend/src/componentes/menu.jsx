@@ -4,7 +4,7 @@ import '../styles/styles.css';
 
 function Menu() {
   return (
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark" >
       <div class="container-fluid ">
         <div class="text-center">
           <a class="navbar-brand" href="/"> <b className='la_v'>V</b>irtual<b className='la_v'>W</b>allet</a>
@@ -16,7 +16,7 @@ function Menu() {
           <ul class="navbar-nav">
             <li class="nav-item">
 
-              <a class="nav-link active" aria-current="page" href="/" style={{ color: "white" }} >Mensajes</a>
+              <a class="nav-link active" aria-current="page" href="/mensajes" style={{ color: "white" }} >Mensajes</a>
             </li>
             <li class="nav-item">
 

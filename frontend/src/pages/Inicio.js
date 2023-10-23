@@ -7,7 +7,7 @@ import Productos from '../componentes/productos';
 
 function Inicio() {
     return (
-        <div className='Inicio ' class='body' style={{paddingLeft: '9px'}}>
+        <div className='Inicio ' class='body' style={{paddingLeft: '0px'}}>
             <Menu />
             <div style={{display: 'flex', justifyContent: 'center'}}>
             <img src={jairo} alt="imagen" style={{ width: "90vw", height:"50vh"}}></img>
@@ -37,7 +37,7 @@ function Inicio() {
                 </button>
             </div>
             <Productos />
-            <Footer></Footer>
+         
         </div>
 
 
