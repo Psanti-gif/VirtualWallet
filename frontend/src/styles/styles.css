@@ -1,55 +1,212 @@
+body{
+    overflow-x: hidden !important;  
+}
+
+.minh{
+    min-height: 100svh;
+}
+
+.li{
+    max-width: 100vw;
+}
+
+.menu{
+    margin: solid black 1px;
+}
+.noscrolly{
+    overflow-y: hidden !important;
+}
+
+.noscrollx{
+    overflow-x: hidden !important;
+}
+
 :root {
-    --dark: #16191C;
-    --dark-x: #1e2126;
-    --light: #00A6FF;
+    --dark: #0B0B0C;
+    --dark-x: #1e2126; 
+    --light: #ffffff;
 }
-
-
-.color {
-    background-color: black !important;
-}
-
-.navbar-toggler {
-    background-color: white !important;
-}
-
-.navbar-brand {
-    color: white !important;
-}
-
-.la_v {
-    color: rgb(68, 152, 226);
-    font-size: 20px;
-}
-
-.btn {
-    min-height: 3.125rem;
-    font-weight: 600;
-}
-
-.text-light {
-    color: var(--light) !important;
-}
-
-.bg-dark {
-    background-color: var(--dark) !important;
-}
-
-.bg-dark-x {
-    background-color: var(--dark-x) !important;
-}
-
-button.bg-dark-x:hover {
-    background-color: var(--light) !important
+.row{
+    --bs-gutter-x: 0 !important;
 }
 
 .body {
     font-family: 'Spartan', sans-serif;
     font-weight: 300;
     color: var(--light);
+
 }
 
-body {
-    background-color: #F1F0F0 !important;
-    background-size: 100vh, 100vw;
+.text-light { color: var(--light) !important; }
+.bg-dark-dark { background-color: var(--dark) !important; }
+.bg-dark-x { background-color: var(--dark-x) !important; }
+
+.btn {
+    min-height: 3.125rem;
+    font-weight: 600;
+}
+
+.form-control {
+    min-height: 2rem !important;
+    line-height: initial !important;
+    font-size: 13px !important  ;
+}
+.form-control:focus {
+
+    outline: none !important;
+}
+
+.img-1 {
+    background-image: url('../imagenes/high-rise-buildings-free-photo.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.img-2 {
+    background-image: url('../imagenes/imagen.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.img-3 {
+    background-image: url('../imagenes/im-3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.img-m{
+    background-image: url('../imagenes/im-3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 5vw;
+    width: 5vw;
+}
+
+.label {
+  font-size: 13px !important;
+}
+
+.la_v{
+    color: rgb(68, 152, 226);
+    font-size: 10vh;
+}
+
+.div{
+    height: 16vh;
+}
+
+.l{
+    font-size: 5vh !important;
+}
+
+.margen{
+    margin-top: 0% !important;
+}
+
+
+.boton3 {
+    display: flex !important;
+    justify-content: center !important;
+    color: #318aac !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-color: #318aac;
+    transition: all 1s ease;
+    position: relative;
+    
+}
+.boton3:hover {
+    background-color: darkslategrey;
+    color: #fff !important;
+}
+
+.h{
+    height: 15vh !important;
+}
+
+
+.boton1 {
+    display: flex !important;
+    justify-content: center !important;
+    color: #318aac !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-color: #318aac;
+    transition: all 1s ease;
+    position: relative;
+     
+}
+.boton1:hover {
+    background-color: lightseagreen;
+    color: #fff !important;
+}
+
+.boton2 {
+    display: flex !important;
+    justify-content: center !important;
+    color: #318aac !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: rgba(0,0,0,0);
+    border: 2px solid;
+    border-color: #318aac;
+    transition: all 1s ease;
+    position: relative; 
+    
+}
+
+.boton2:hover {
+    background: green;
+    color: #fff !important;
+}
+
+.icon{
+    height: 10vw;
+}
+
+svg {
+    height: 5em !important;
+    width: 5em !important;
+}
+
+.profile-image {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.profile-info {
+    padding: 20px;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-email {
+    color: #6c757d;
+}
+
+.profile-location {
+    color: #6c757d;
+}
+
+.btn-edit-profile {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-edit-profile:hover {
+    background-color: #0056b3;
 }

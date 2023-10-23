@@ -8,13 +8,15 @@ import SobreNosotros from '../pages/SobreNosotros';
 import Transacciones from '../pages/Transacciones';
 import Cuentas_vinculadas from '../pages/Cuentas_vinculadas';
 import Mensajes from '../pages/Mensajes';
+import Registro from '../pages/registro'
 
 function App() {
   return (
    <Router>
     <Routes>
-      <Route exact path='/' element={<Inicio/>}/>
-      <Route exact path='/login' element={<Login/>}/>
+      <Route exact path='/' element={<Login/>}/>
+      <Route exact path='/home' element={<Inicio/>}/>
+      <Route exact path='/registro' element={<Registro/>}/>
       <Route exact path='/saldo' element={<Saldo/>}/>
       <Route exact path='/nosotros' element={<SobreNosotros/>}/>
       <Route exact path='/transacciones' element={<Transacciones/>}/>
