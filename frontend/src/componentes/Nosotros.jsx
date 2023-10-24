@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/styles.css';
+import '../styles/styles1.css';
 
 import Footer from './footer';
 import jairo from '../imagenes/high-rise-buildings-free-photo.jpeg'

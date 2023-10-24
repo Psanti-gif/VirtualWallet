@@ -27,21 +27,21 @@ function Cuentas_vinculadas() {
 
                         <div class="container">
                             <div class="row " style={{ display: "flex" }}>
-                                <div class="col-4 col-lg-4 col-md-4" style={{ marginTop: "20px" }}>
+                                <div class="col-4 col-lg-4 col-md-4" style={{ marginTop: "20px", padding:"8px" }}>
                                     <div class="card" style={{ width: "20vh;" }}>
-                                        <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2"><img src={bbva} class="card-img-top" alt="..." /></button>
+                                        <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2"style={{padding:"2px"}}><img src={bbva} class="card-img-top" alt="..." /></button>
 
                                     </div>
                                 </div>
-                                <div class="col-4 col-lg-4 col-md-4" style={{ marginTop: "20px" }}>
+                                <div class="col-4 col-lg-4 col-md-4" style={{ marginTop: "20px",padding:"8px"}}>
                                     <div class="card" style={{ width: "20vh;" }}>
-                                        <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2"><img src={bancolombia} class="card-img-top" alt="..." /></button>
+                                        <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2"style={{padding:"2px"}}><img src={bancolombia} class="card-img-top" alt="..." /></button>
 
                                     </div>
                                 </div>
-                                <div class="col-4 col-lg-4 col-md-4" style={{ marginTop: "20px", marginBottom: "20px" }}>
+                                <div class="col-4 col-lg-4 col-md-4" style={{ marginTop: "20px",padding:"8px" }}>
                                     <div class="card" style={{ width: "20vh;" }}>
-                                        <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2"><img src={daviplata} class="card-img-top" alt="..." /></button>
+                                        <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2"style={{padding:"2px"}}><img src={daviplata} class="card-img-top" alt="..." /></button>
 
                                     </div>
                                 </div>
@@ -49,6 +49,7 @@ function Cuentas_vinculadas() {
                             </div>
 
                         </div>
+                        
                         <br></br>
 
                     </div>
@@ -56,29 +57,30 @@ function Cuentas_vinculadas() {
             </div>
             </div>
             <div style={{ display: "block", padding: "20px", marginTop: "0px" }}><div className="Footer">
-                <div class="card text-center" style={{ backgroundColor: "black" }}>
+                <div class="card text-center" style={{ backgroundColor: "black", marginBottom:"20px"}}>
                     <div class="card-header" style={{ color: "white" }}>
-                    <div class="container">
+                    <div class="container" >
                             <div class="row" style={{ display: "flex" }}>
-                                <div class="col-4 col-lg-4 col-md-4" style={{ marginTop: "20px", marginBottom: "20px" }}>
+                                <div class="col-4 col-lg-4 col-md-4" style={{ marginTop: "20px", padding:"8px"}}>
                                     <div class="card" style={{ width: "20vh;" }}>
-                                        <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2"><img src={avvillas} class="card-img-top" alt="..." /></button>
+                                        <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2"style={{padding:"2px"}}><img src={avvillas} class="card-img-top" alt="..." /></button>
 
                                     </div>
                                 </div>
-                                <div class="col-4 col-lg-4 col-md-4" style={{ marginTop: "20px", marginBottom: "20px" }}>
+                                <div class="col-4 col-lg-4 col-md-4" style={{ marginTop: "20px",padding:"8px"}}>
                                     <div class="card" style={{ width: "20vh;" }}>
-                                        <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2"><img src={bancodebogota} class="card-img-top" alt="..." /></button>
+                                        <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2"style={{padding:"2px"}}><img src={bancodebogota} class="card-img-top" alt="..." /></button>
 
                                     </div>
                                 </div>
-                                <div class="col-4 col-lg-4 col-md-4" style={{ marginTop: "20px", marginBottom: "20px" }}>
+                                <div class="col-4 col-lg-4 col-md-4" style={{ marginTop: "20px",padding:"8px" }}>
                                     <div class="card" style={{ width: "20vh;" }}>
-                                        <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2"><img src={bancocajasocial} class="card-img-top" alt="..." /></button>
+                                        <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2" style={{padding:"2px"}}><img src={bancocajasocial} class="card-img-top" alt="..." /></button>
                 
                                     </div>
-                                    <div> <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2">AÑADIR CUENTAS</button></div>
+                                    
                                 </div>
+                                <div> <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2" style={{borderRadius:"20px", margin:"10px"}} >AÑADIR CUENTAS</button></div>
                             </div>
                         </div>
                     </div>

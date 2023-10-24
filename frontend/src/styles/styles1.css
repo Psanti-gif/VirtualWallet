@@ -1,7 +1,8 @@
 :root {
     --dark: #16191C;
     --dark-x: #1e2126;
-    --light: #00A6FF;
+    --blue: #00A6FF;
+    --light: #ffffff;
 }
 
 
@@ -17,7 +18,7 @@
     color: white !important;
 }
 
-.la_v {
+.la_vi {
     color: rgb(68, 152, 226);
     font-size: 20px;
 }
@@ -28,7 +29,7 @@
 }
 
 .text-light {
-    color: var(--light) !important;
+    color: var(--blue) !important;
 }
 
 .bg-dark {
@@ -40,7 +41,7 @@
 }
 
 button.bg-dark-x:hover {
-    background-color: var(--light) !important
+    background-color: var(--blue) !important
 }
 
 .body {

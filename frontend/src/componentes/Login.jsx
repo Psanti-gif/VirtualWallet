@@ -4,6 +4,7 @@ import Logo from './logov'
 import  Inicio  from '../pages/Inicio'
 import {Link} from "react-router-dom"
 import axios from 'axios';
+import Saldo from '../pages/Saldo';
 
 
 function Login(){
@@ -60,8 +61,8 @@ function Login(){
 
 
     return(
-        <div class="bg-dark-dark body noscrollx" >
-          <section class="row" id="Login">
+        <div class="MiLogin" >
+          <section class="row bg-dark-dark body noscrollx" id="Login">
             <div class="col-lg-7 d-none d-lg-block h-100">
               <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
@@ -72,20 +73,20 @@ function Login(){
                 <div class="carousel-inner">
                   <div class="carousel-item img-1 min-vh-100 active">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5 class="font-weidht-bold">First slide label</h5>
-                      <a class="tex-muted text-decoration-none">Some representative placeholder content for the first slide.</a>
+                      <h5 class="font-weidht-bold"></h5>
+                      <a class="tex-muted text-decoration-none"></a>
                     </div>
                   </div>
                   <div class="carousel-item img-2 min-vh-100 ">
                       <div class="carousel-caption d-none d-md-block">
-                        <h5 class="font-weidht-bold">Second slide label</h5>
-                        <a class="tex-muted text-decoration-none">Some representative placeholder content for the second slide.</a>
+                        <h5 class="font-weidht-bold"></h5>
+                        <a class="tex-muted text-decoration-none"></a>
                       </div>
                   </div>
                   <div class="carousel-item img-3 min-vh-100">
                       <div class="carousel-caption d-none d-md-block">
-                        <h5 class="font-weidht-bold">Third slide label</h5>
-                        <a class="tex-muted text-decoration-none">Some representative placeholder content for the third slide.</a>
+                        <h5 class="font-weidht-bold"></h5>
+                        <a class="tex-muted text-decoration-none"></a>
                       </div>
                   </div>
                 </div>

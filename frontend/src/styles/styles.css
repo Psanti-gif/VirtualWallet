@@ -25,6 +25,7 @@ body{
     --dark: #0B0B0C;
     --dark-x: #1e2126; 
     --light: #ffffff;
+    
 }
 .row{
     --bs-gutter-x: 0 !important;
