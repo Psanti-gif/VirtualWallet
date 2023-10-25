@@ -3,33 +3,6 @@ import "../styles/perfil.css";
 import Menu from "./menu";
 
 function Perfil() {
-  const [selectedImage, setSelectedImage] = useState(null);
-  const fileInputRef = useRef(null);
-
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    setSelectedImage(file);
-
-    fileInputRef.current.value = "";
-  };
-
-  const handleImageClick = () => {
-    fileInputRef.current.click();
-  };
-
-  const handleImageUpload = () => {
-    if (selectedImage) {
-      const formData = new FormData();
-      formData.append("imagen", selectedImage);
-
-      fetch("/subir-imagen", {
-        method: "POST",
-        body: formData,
-      }).catch((error) => {
-        console.error("Error al subir la imagen", error);
-      });
-    }
-  };
 
   return (
     <div className="body">
@@ -43,37 +16,17 @@ function Perfil() {
                   <div className="col-sm-4 bg-c-lite-green user-profile">
                     <div className="card-block text-center text-white">
                       <div className="m-b-25">
-                      <input
-                          type="file"
-                          accept="image/*"
-                          style={{ display: "none" }}
-                          ref={fileInputRef}
-                          onChange={handleImageChange}
-                        />
-                        {selectedImage ? (
-                          <img
-                            src={URL.createObjectURL(selectedImage)}
-                            className="img-radius"
-                            alt="User-Profile-Image"
-                            style={{ maxWidth: "100%", maxHeight: "100%" }}
-                          />
-                        ) :(
+
                           <img
                             src="https://img.icons8.com/bubbles/100/000000/user.png"
                             className="img-radius"
                             alt="User-Profile-Image"
                           />
-                        )}
-                        <input
-                          type="file"
-                          accept="image/*"
-                          onChange={handleImageChange}
-                        />
+
                       </div>
-                      <h6 className="f-w-600">Hembo Tingor</h6>
-                      <p>Web Designer</p>
+                      <h6 className="f-w-600">Jesid Lopez</h6>
+                      <p>Diseñador webr</p>
                       <i className=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
-                      <button onClick={handleImageUpload}>Subir Imagen</button>
                     </div>
                   </div>
                   <div class="col-sm-8">
@@ -82,26 +35,22 @@ function Perfil() {
                         Information
                       </h6>
                       <div class="row">
-                        <div class="col-sm-6">
-                          <p class="m-b-10 f-w-600">Email</p>
-                          <h6 class="text-muted f-w-400">rntng@gmail.com</h6>
-                        </div>
-                        <div class="col-sm-6">
-                          <p class="m-b-10 f-w-600">Phone</p>
-                          <h6 class="text-muted f-w-400">98979989898</h6>
+
+                         <div class="col-sm-6">
+                          <p class="m-b-10 f-w-600">Nombre</p>
+                          <h6 class="text-muted f-w-400">Jesid</h6>
                         </div>
                       </div>
-                      <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">
-                        Projects
-                      </h6>
-                      <div class="row">
+
                         <div class="col-sm-6">
-                          <p class="m-b-10 f-w-600">Recent</p>
-                          <h6 class="text-muted f-w-400">Sam Disuja</h6>
+                          <p class="m-b-10 f-w-600">Email</p>
+                          <h6 class="text-muted f-w-400">jesid4512@gmail.com</h6>
                         </div>
+
+                        
                         <div class="col-sm-6">
-                          <p class="m-b-10 f-w-600">Most Viewed</p>
-                          <h6 class="text-muted f-w-400">Dinoter husainm</h6>
+                          <p class="m-b-10 f-w-600">Phone</p>
+                          <h6 class="text-muted f-w-400">3026631148</h6>
                         </div>
                       </div>
                       <ul class="social-link list-unstyled m-t-40 m-b-10">
@@ -159,7 +108,6 @@ function Perfil() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 
