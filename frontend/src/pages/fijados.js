@@ -7,6 +7,7 @@ function Fijados() {
     return(
        <div className="Fijados">
         <Menu/>
+        <h1>Pagina en construcción</h1>
        </div>
     )
 

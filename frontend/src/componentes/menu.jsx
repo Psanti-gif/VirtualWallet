@@ -27,18 +27,21 @@ function Menu() {
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
+
+          <li class="nav-item">
+
+           <Link class="nav-link active" aria-current="page" to="/perfil" style={{ color: "white" }} >Perfil</Link>
+          </li>
+
             <li class="nav-item">
 
-              <a class="nav-link active" aria-current="page" href="/mensajes" style={{ color: "white" }} >Mensajes</a>
+              <Link class="nav-link active" aria-current="page" to="/fijados" style={{ color: "white" }} >fijados</Link>
             </li>
             <li class="nav-item">
 
-              <a class="nav-link active" aria-current="page" href="/nosotros" style={{ color: "white" }} >Sobre Nosotros</a>
+              <Link class="nav-link active" aria-current="page" to="/nosotros" style={{ color: "white" }} >Sobre Nosotros</Link>
             </li>
-            <li class="nav-item">
 
-              <a class="nav-link active" aria-current="page" href="#" style={{ color: "white" }} >Ajustes</a>
-            </li>
             <li class="nav-item">
 
             <Nav.Link className='text-light' onClick={handleCerrarSesion}>

@@ -74,19 +74,19 @@ function Login(){
                   <div class="carousel-item img-1 min-vh-100 active">
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="font-weidht-bold"></h5>
-                      <a class="tex-muted text-decoration-none"></a>
+                      <Link to="/tyc" class="tex-muted text-light">Al Iniciar Sesión aceptas nuestros terminos y condiciones</Link>
                     </div>
                   </div>
                   <div class="carousel-item img-2 min-vh-100 ">
                       <div class="carousel-caption d-none d-md-block">
                         <h5 class="font-weidht-bold"></h5>
-                        <a class="tex-muted text-decoration-none"></a>
+                        <Link to="/tyc" class="tex-muted text-light">Al Iniciar Sesión aceptas nuestros terminos y condiciones</Link>
                       </div>
                   </div>
                   <div class="carousel-item img-3 min-vh-100">
                       <div class="carousel-caption d-none d-md-block">
                         <h5 class="font-weidht-bold"></h5>
-                        <a class="tex-muted text-decoration-none"></a>
+                        <Link to="/tyc" class="tex-muted text-light">Al Iniciar Sesión aceptas nuestros terminos y condiciones</Link>
                       </div>
                   </div>
                 </div>

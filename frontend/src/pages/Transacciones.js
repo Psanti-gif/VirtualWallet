@@ -6,6 +6,7 @@ function Transacciones(){
     return (
         <div>
             <Menu></Menu>
+            <h1>Pagina en construcción</h1>
             
         </div>
     );
