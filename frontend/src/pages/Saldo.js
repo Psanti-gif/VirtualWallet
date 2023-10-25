@@ -62,7 +62,7 @@ function Saldo() {
 
             </div>
             </div>
-            <Footer></Footer>
+           
         </div>
 
 

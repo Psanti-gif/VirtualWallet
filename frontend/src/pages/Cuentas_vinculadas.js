@@ -87,7 +87,7 @@ function Cuentas_vinculadas() {
 
                 </div>
             </div>
-                <Footer></Footer>
+                
             </div>
         </div>
 

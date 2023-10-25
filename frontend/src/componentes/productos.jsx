@@ -55,7 +55,7 @@ function Productos() {
                 </div>
             </div>
 
-            <Footer></Footer>
+           
         </div>
 
 

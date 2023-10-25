@@ -1,16 +1,24 @@
 import React from "react";
 import '../styles/styles1.css';
 import Menu from "../componentes/menu";
+import Transaccion from "../componentes/transacciones";
+import Footert from "../componentes/footert";
 
-function Transacciones(){
+function Transacciones() {
     return (
         <div>
             <Menu></Menu>
-            <h1>Pagina en construcción</h1>
+            <form class="d-flex" role="search" style={{marginTop:"30px", marginLeft:"20px",marginRight:"20px", marginBottom:"30px"}}>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <Transaccion></Transaccion>
+            <Footert/>
             
+
         </div>
     );
-    
+
 }
 
 export default Transacciones;
