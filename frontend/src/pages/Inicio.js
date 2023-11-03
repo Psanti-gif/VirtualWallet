@@ -36,7 +36,6 @@ function Inicio() {
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <a href="sms:">Abrir aplicación de SMS</a>
             <Productos />
          
         </div>

@@ -32,7 +32,7 @@ function Productos() {
                             </p>
                         </div>
                         <div class="card-footer">
-                        <Link to={"/transacciones"}>
+                        <Link to={"sms:"}>
                             <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2">Seleccionar</button>
                         </Link>
                         </div>
