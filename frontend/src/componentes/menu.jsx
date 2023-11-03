@@ -35,7 +35,7 @@ function Menu() {
 
             <li class="nav-item">
 
-              <Link class="nav-link active" aria-current="page" to="/fijados" style={{ color: "white" }} >fijados</Link>
+              <Link class="nav-link active" aria-current="page" to="/fijados" style={{ color: "white" }} >Fijados</Link>
             </li>
             <li class="nav-item">
 
