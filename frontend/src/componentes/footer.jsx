@@ -22,7 +22,7 @@ function Footer() {
                                 <div class="card" style={{ width: "20vh;" }}>
                                     <img src={jesid} class="card-img-top" alt="..." />    
                                     <p>Jesid Lopez Alvarez <br />
-                                    (Manager, CGO)</p>
+                                    (Manager,Fuckboy??)</p>
                                 </div>
                             </div>
                             <div class="col-4 col-lg-4 col-md-4" style={{marginTop:"20px",padding:"4px"}}>
