@@ -130,7 +130,7 @@ function Login(){
             </div>
           </section>
 
-        { miLogin === "true" && <Inicio tel /> }
+        { miLogin === "true" && <Inicio setMiLogin /> }
       </div>
     );
 }

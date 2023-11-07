@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import axios from "axios";
 import { Link} from 'react-router-dom';
 import Logo from './logov';
-import  Inicio  from '../pages/Inicio'
+import  Login  from '../pages/Login'
 import '../styles/styles.css';
 
 
@@ -174,7 +174,8 @@ function Formulario(){
             </section>
             
           </div>
-          { miRegistro === "true" && <Inicio/> }
+          { miRegistro === "true" && <Login/> }
+          
     </div>
           
     );

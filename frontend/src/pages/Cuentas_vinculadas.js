@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState, useEffect} from 'react';
+import {useNavigate } from "react-router-dom";
 import Menu from "../componentes/menu";
 import Footer from "../componentes/footer";
 import bbva from "../imagenes/bbva.png";
@@ -12,8 +13,27 @@ import jesid from "../imagenes/jesid.jpg";
 
 
 function Cuentas_vinculadas() {
+
+
+    
+    
+    const navigate = useNavigate();
+    const [miLogin, setMiLogin] = useState(false);
+  
+    useEffect(() => {
+      if (miLogin === false) {
+        const homeElement = document.getElementById("cv");
+        if (homeElement) {
+          homeElement.style.display = "none";
+        }
+        console.log("La variable es false");
+        navigate("/"); 
+      }
+    }, [miLogin, navigate]);
+    
+
     return (
-        <div><Menu />
+        <div id="cv" ><Menu />
             <div style={{ display: "flex", justifyContent: "space-around", borderRadius: "20px" }}>
                 <img src={logo} style={{ display: "flex", width: "30vh", paddingBottom: "40px", paddingTop: "80px" }}></img>
 
