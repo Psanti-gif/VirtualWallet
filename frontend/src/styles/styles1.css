@@ -1,8 +1,21 @@
-:root {
+:hover {
     --dark: #16191C;
     --dark-x: #1e2126;
     --blue: #00A6FF;
     --light: #ffffff;
+    
+}
+
+.jairo:active{
+    display: none;
+}
+
+.jairo2:active{
+    display: none;
+}
+
+.jairo3:active{
+    display: none;
 }
 
 
