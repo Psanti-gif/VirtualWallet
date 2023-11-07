@@ -38,19 +38,19 @@ function Saldo() {
                             <div class="row " style={{ display: "flex" }}>
                                 <div class="col-6 col-lg-4 col-md-4" style={{ marginTop: "20px",  marginBottom: "10px",padding:"6px" }}>
                                     <div class="card" style={{}}>
-                                    <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2" style={{padding:"4px"}}><img src={bancoP} class="card-img-top" alt="..." /></button>
+                                    <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2" style={{padding:"4px"}}><div class="jairo3"><img src={bancoP} className='imagen-con-efecto' class="card-img-top" alt="..." /></div></button>
 
                                     </div>
                                 </div>
                                 <div class="col-6 col-lg-4 col-md-4" style={{ marginTop: "20px", marginBottom: "10px",padding:"6px" }}>
                                     <div class="card" style={{ width: "20vh;" }}>
-                                    <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2" style={{padding:"4px"}}><img src={bancoAv} class="card-img-top" alt="..." /></button>
+                                    <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2" style={{padding:"4px"}}><div class="jairo2"><img src={bancoAv} class="card-img-top" alt="..." /></div></button>
 
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4" style={{ marginTop: "20px", marginBottom: "10px",padding:"6px"}}>
                                     <div class="card" style={{ width: "20vh;" }}>
-                                    <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2" style={{padding:"4px"}}><img src={bancolombia} class="card-img-top" alt="..." /></button>
+                                    <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2" style={{padding:"4px"}}><div class="jairo"><img src={bancolombia} class="card-img-top"  alt="..." /></div></button>
 
                                     </div>
                                 </div>
