@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import {useNavigate } from "react-router-dom";
 import Menu from '../componentes/menu';
 import logo from '../imagenes/icono.png';
 import Transacciones from '../imagenes/cashless_icon_194058.png';
@@ -10,8 +11,27 @@ import bancolombia from '../imagenes/bancolombia.jpg';
 import Footer from '../componentes/footer';
 
 function Saldo() {
+
+    
+
+    
+    
+    const navigate = useNavigate();
+    const [miLogin, setMiLogin] = useState(false);
+  
+    useEffect(() => {
+      if (miLogin === false) {
+        const homeElement = document.getElementById("Saldo");
+        if (homeElement) {
+          homeElement.style.display = "none";
+        }
+        console.log("La variable es false");
+        navigate("/"); 
+      }
+    }, [miLogin, navigate]);
+
     return (
-        <div><Menu />
+        <div id="Saldo"><Menu />
         <div style={{display:"flex", justifyContent:"space-around", borderRadius:"20px"}}>
             <img src={logo} style={{display:"flex",width:"30vh",paddingBottom:"40px", paddingTop:"80px"}}></img>
 
