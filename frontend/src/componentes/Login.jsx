@@ -130,7 +130,7 @@ function Login(){
             </div>
           </section>
 
-        { miLogin === "true" && <Inicio setMiLogin /> }
+        { miLogin === "true" && <Inicio Login={{ setmiLogin: miLogin }} /> }
       </div>
     );
 }

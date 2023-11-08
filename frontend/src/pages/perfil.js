@@ -1,14 +1,30 @@
 import React, {useState, useEffect} from 'react';
-import {useNavigate } from "react-router-dom";
+import {useNavigate, useLocation  } from "react-router-dom";
 import Menu from '../componentes/menu'
+import Perfil from '../componentes/perfil'
 
-function Perfil(){
+function Perfilp(){
+    
+  const location = useLocation()
+  const { setmiLogin } = location.state
+  const navigate = useNavigate();
+  const [miLogin, setMiLogin] = useState(setmiLogin);
+  console.log("Sobrenosotros->",miLogin)
+
+  useEffect(() => {
+    if (miLogin === false) {
+      console.log("La variable es false");
+      navigate("/"); 
+    }
+  }, [miLogin, navigate]);
+  
     return(
-        <div>
+        <div id="Perfil">
+            <Menu />   
             <Perfil/>
-            <Menu/>     
+  
         </div>
     )
 }
 
-export default Perfil
+export default Perfilp;

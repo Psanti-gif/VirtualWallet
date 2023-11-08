@@ -1,11 +1,12 @@
-import React from 'react';
+import React,  { useState } from 'react';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import '../styles/styles1.css';
 
-function Menu() {
+function Menu({login}) {
   const navigate = useNavigate();
+  const [miLogin, setMiLogin] = useNavigate(login.setmilogin);
 
   const handleCerrarSesion = () => {
     // Aquí puedes agregar la lógica para cerrar sesión, como eliminar el token de autenticación, etc.
@@ -39,7 +40,7 @@ function Menu() {
             </li>
             <li class="nav-item">
 
-              <Link class="nav-link active" aria-current="page" to="/nosotros" style={{ color: "white" }} >Sobre Nosotros</Link>
+              <Link class="nav-link active" aria-current="page" to="/nosotros" style={{ color: "white" }} state={setMiLogin.login.setmilogin} >Sobre Nosotros</Link>
             </li>
 
             <li class="nav-item">

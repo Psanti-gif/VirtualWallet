@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {useNavigate } from "react-router-dom";
+import {useNavigate, useLocation  } from "react-router-dom";
 import "../styles/perfil.css";
 import Menu from "../componentes/menu";
 
@@ -7,19 +7,22 @@ import Menu from "../componentes/menu";
 function Asistencia() {
 
     
-    const navigate = useNavigate();
-    const [miLogin, setMiLogin] = useState(false);
+  const location = useLocation()
+  const { setmiLogin } = location.state
+  const navigate = useNavigate();
+  const [miLogin, setMiLogin] = useState(setmiLogin);
+  console.log("Sobrenosotros->",miLogin)
+
+  useEffect(() => {
+    if (miLogin === false) {
+      console.log("La variable es false");
+      alert("Inicia sesión primero")
+      navigate("/"); 
+      
+    } else{
+    }
+  }, [miLogin, navigate]);
   
-    useEffect(() => {
-      if (miLogin === false) {
-        const homeElement = document.getElementById("Asistencia");
-        if (homeElement) {
-          homeElement.style.display = "none";
-        }
-        console.log("La variable es false");
-        navigate("/"); 
-      }
-    }, [miLogin, navigate]);
 
 
     return(

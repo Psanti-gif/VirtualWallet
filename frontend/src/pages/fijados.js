@@ -1,10 +1,24 @@
 import React, {useState, useEffect} from 'react';
-import {useNavigate } from "react-router-dom";
+import {useNavigate, useLocation } from "react-router-dom";
 import "../styles/perfil.css";
 import Menu from "../componentes/menu";
 
 
 function Fijados() {
+        
+  const location = useLocation()
+  const { setmiLogin } = location.state
+  const navigate = useNavigate();
+  const [miLogin, setMiLogin] = useState(setmiLogin);
+  console.log("Sobrenosotros->",miLogin)
+
+  useEffect(() => {
+    if (miLogin === false) {
+      console.log("La variable es false");
+      navigate("/"); 
+    }
+  }, [miLogin, navigate]);
+  
     return(
        <div className="Fijados">
         <Menu/>
