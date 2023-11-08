@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../styles/styles.css';
 import Logo from './logov'
-import  Inicio  from '../pages/Inicio'
+import  Inicio  from '../pages/Saldo'
 import {Link} from "react-router-dom"
 import axios from 'axios';
 import Saldo from '../pages/Saldo';
