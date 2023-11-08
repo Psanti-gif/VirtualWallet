@@ -15,7 +15,7 @@ function Perfil() {
               <div className="col-xl-12 col-md-12">
                 <div className="card user-card-full">
                   <div className="">
-                    <div className="col-sm-4 bg-c-lite-green user-profile">
+                    <div className="col-sm-12 bg-c-lite-green user-profile">
                       <div className="card-block text-center text-white">
                         <div className="m-b-25">
                           <img
