@@ -5,7 +5,7 @@ import jairo from '../imagenes/high-rise-buildings-free-photo.jpeg';
 import Productos from '../componentes/productos';
 
 
-function Inicio({ login }) {
+function Inicio() {
     
     return (
         <div className='Inicio ' class='body' style={{paddingLeft: '0px'}}>
