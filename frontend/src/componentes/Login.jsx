@@ -16,29 +16,26 @@ function Login() {
 
   async function peticionPost(txtema, txttel, txtpas) {
     console.log("ema y tel -->", txtema, txtpas);
-    await axios
-      .post("http://localhost:4001/api/usuarios/autenticacion", [
-        txtema,
-        txttel,
-        txtpas,
-      ])
-      .then((response) => {
-        if (response) {
-          setMiLogin("true");
-          console.log(response);
-          document.getElementById("Login").style.display = "none";
-        } else {
-          setMiLogin("false");
-          alert("Hay un error en alguno de los campos");
-          document.getElementById("txtema").value = "";
-          document.getElementById("txttel").value = "";
-          document.getElementById("txtpas").value = "";
-          document.getElementById("txtema").focus();
-        }
-      })
-      .catch((error) => {
-        console.log(error.message);
-      });
+    await axios.post('http://localhost:4001/api/usuarios/autenticacion', [txtema, txttel, txtpas])
+        .then(response => { 
+            if(response){
+              setMiLogin("true");
+              console.log(response);
+              document.getElementById("Login").style.display = "none";
+            }
+            else{
+              setMiLogin("false");
+              alert("Hay un error en alguno de los campos");
+              document.getElementById("txtema").value= "";
+              document.getElementById("txttel").value= "";
+              document.getElementById("txtpas").value= "";
+              document.getElementById("txtema").focus();
+      
+            }
+        }).catch(error => {
+            console.log(error.message);
+        })
+
   }
 
   console.log("Token=>,", token);
