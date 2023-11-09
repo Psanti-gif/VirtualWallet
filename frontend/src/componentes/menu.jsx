@@ -1,4 +1,4 @@
-import React from 'react';
+import React,  { useState } from 'react';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -20,7 +20,7 @@ function Menu() {
     <nav class="navbar navbar-expand-lg bg-dark" >
       <div class="container-fluid ">
         <div class="text-center">
-          <a class="navbar-brand" href="/home"> <b className='la_vi'>V</b>irtual<b className='la_vi'>W</b>allet</a>
+          <Link class="navbar-brand" to="/home"> <b className='la_vi'>V</b>irtual<b className='la_vi'>W</b>allet</Link>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
           <span class="navbar-toggler-icon"></span>
@@ -30,16 +30,23 @@ function Menu() {
 
           <li class="nav-item">
 
-           <Link class="nav-link active" aria-current="page" to="/perfil" style={{ color: "white" }} >Perfil</Link>
+           <Link class="nav-link active" aria-current="page" to="/perfil" style={{ color: "white" }} 
+            >Perfil</Link>
+          </li>
+
+          <li class="nav-item">
+
+            <Link class="nav-link active" aria-current="page" to="/asistencia" style={{ color: "white" }} >Asistencia</Link>
           </li>
 
             <li class="nav-item">
 
-              <Link class="nav-link active" aria-current="page" to="/fijados" style={{ color: "white" }} >Fijados</Link>
+              <Link class="nav-link active" aria-current="page" to="/fijados" style={{ color: "white" }}>Fijados</Link>
             </li>
             <li class="nav-item">
 
-              <Link class="nav-link active" aria-current="page" to="/nosotros" style={{ color: "white" }} >Sobre Nosotros</Link>
+              <Link to="/nosotros"  class="nav-link active" aria-current="page" style={{ color: "white" }} 
+              >Sobre Nosotros</Link>
             </li>
 
             <li class="nav-item">

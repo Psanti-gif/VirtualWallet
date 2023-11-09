@@ -86,6 +86,10 @@ body{
     width: 5vw;
 }
 
+.img-t{
+    background-image: url('../imagenes/logo\ virtualwallet.png');
+}
+
 .label {
   font-size: 13px !important;
 }

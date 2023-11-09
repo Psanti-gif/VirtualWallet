@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from "react-router-dom";
+import React, {useState, useEffect} from 'react';
+import {useNavigate } from "react-router-dom";
 import Menu from '../componentes/menu';
 import logo from '../imagenes/icono.png';
 import Transacciones from '../imagenes/cashless_icon_194058.png';
@@ -12,44 +12,11 @@ import Footer from '../componentes/footer';
 
 
 function Saldo() {
-    function handleBanco() {
-        document.getElementById("banco3").style.display = "none"
-        document.getElementById("saldo3").style.display = "inline-block"
-    }
-    function handleBanco2(){
-        document.getElementById("banco2").style.display = "none"
-        document.getElementById("saldo2").style.display = "inline-block"
-    }
-    function handleBanco3(){
-        document.getElementById("banco1").style.display = "none"
-        document.getElementById("saldo1").style.display = "inline-block"
-    }
-    function handleSaldo() {
-        document.getElementById("saldo3").style.display = "none"
-        document.getElementById("banco3").style.display = "inline-block"
-        document.getElementById("saldo2").style.display = "none"
-        document.getElementById("banco2").style.display = "inline-block"
-        document.getElementById("saldo1").style.display = "none"
-        document.getElementById("banco1").style.display = "inline-block"
-    }
-
-
-
-
-    const navigate = useNavigate();
-    const [miLogin, setMiLogin] = useState(false);
-
-    useEffect(() => {
-        if (miLogin === false) {
-            console.log("La variable es false");
-            navigate("/");
-        }
-    }, [miLogin, navigate]);
-
+    
     return (
         <div id="Saldo"><Menu />
-            <div style={{ display: "flex", justifyContent: "space-around", borderRadius: "20px" }}>
-                <img src={logo} style={{ display: "flex", width: "30vh", paddingBottom: "40px", paddingTop: "80px" }}></img>
+        <div style={{display:"flex", justifyContent:"space-around", borderRadius:"20px"}}>
+            <img src={logo} style={{display:"flex",width:"30vh",paddingBottom:"40px", paddingTop:"80px"}}></img>
 
 
             </div>

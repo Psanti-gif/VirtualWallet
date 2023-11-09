@@ -7,11 +7,10 @@ import SobreNosotros from '../pages/SobreNosotros';
 import Transacciones from '../pages/Transacciones';
 import Cuentas_vinculadas from '../pages/Cuentas_vinculadas';
 import Registro from '../pages/registro'
-import Perfil from '../componentes/perfil'
 import Asistencia from '../pages/asistencia';
 import TyC from '../pages/tyc'
 import Fijados from '../pages/fijados'
-
+import Perfil from '../pages/perfil';
 function App() {
   return (
    <Router>
