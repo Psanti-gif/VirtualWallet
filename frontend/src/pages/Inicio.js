@@ -13,7 +13,11 @@ function Inicio({ login }) {
     console.log(miLogin)
   
     useEffect(() => {
-      if (miLogin === "false") {
+      if (miLogin === false) {
+        const homeElement = document.getElementById("home");
+        if (homeElement) {
+          homeElement.style.display = "none";
+        }
         console.log("La variable es false");
         navigate("/"); 
       }

@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import "../styles/styles.css";
-import Logo from "./logov";
-import Inicio from "../pages/Inicio";
-import { Link } from "react-router-dom";
-import axios from "axios";
-import Saldo from "../pages/Saldo";
+import React, {useState} from 'react';
+import '../styles/styles.css';
+import Logo from './logov'
+import  Inicio  from '../pages/Inicio'
+import {Link} from "react-router-dom"
+import axios from 'axios';
+import Saldo from '../pages/Saldo';
+
 
 function Login() {
   const [miLogin, setMiLogin] = useState("false");
@@ -221,5 +222,4 @@ function Login() {
     </div>
   );
 }
-
 export default Login;
