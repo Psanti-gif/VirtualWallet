@@ -3,17 +3,17 @@
     "name": "Create React App Sample",
     "icons": [
       {
-        "src": "logo virtualwallet.png.ico",
+        "src": "wallet_5090.ico",
         "sizes": "64x64 32x32 24x24 16x16",
         "type": "image/x-icon"
       },
       {
-        "src": "logo virtualwallet.png",
+        "src": "logovirtual1.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "logo virtualwallet.png",
+        "src": "logovt.png",
         "type": "image/png",
         "sizes": "512x512"
       }
