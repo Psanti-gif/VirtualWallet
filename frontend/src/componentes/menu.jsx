@@ -6,7 +6,8 @@ import '../styles/styles1.css';
 
 function Menu({login}) {
   const navigate = useNavigate();
-  const [miLogin, setMiLogin] = useNavigate(login.setmilogin);
+  const [miLogin, setMiLogin] = useState(login.setmiLogin);
+  console.log("menu",miLogin)
 
   const handleCerrarSesion = () => {
     // Aquí puedes agregar la lógica para cerrar sesión, como eliminar el token de autenticación, etc.
@@ -21,7 +22,7 @@ function Menu({login}) {
     <nav class="navbar navbar-expand-lg bg-dark" >
       <div class="container-fluid ">
         <div class="text-center">
-          <a class="navbar-brand" href="/home"> <b className='la_vi'>V</b>irtual<b className='la_vi'>W</b>allet</a>
+          <Link class="navbar-brand" to="/home" state={{setmiLogin:login.setmiLogin}}> <b className='la_vi'>V</b>irtual<b className='la_vi'>W</b>allet</Link>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
           <span class="navbar-toggler-icon"></span>
@@ -31,16 +32,25 @@ function Menu({login}) {
 
           <li class="nav-item">
 
-           <Link class="nav-link active" aria-current="page" to="/perfil" style={{ color: "white" }} >Perfil</Link>
+           <Link class="nav-link active" aria-current="page" to="/perfil" style={{ color: "white" }} 
+           state={{setmiLogin:login.setmiLogin}} >Perfil</Link>
+          </li>
+
+          <li class="nav-item">
+
+            <Link class="nav-link active" aria-current="page" to="/asistencia" style={{ color: "white" }} 
+            state={{setmiLogin:login.setmiLogin}} >Asistencia</Link>
           </li>
 
             <li class="nav-item">
 
-              <Link class="nav-link active" aria-current="page" to="/fijados" style={{ color: "white" }} >Fijados</Link>
+              <Link class="nav-link active" aria-current="page" to="/fijados" style={{ color: "white" }}
+               state={{setmiLogin:login.setmiLogin}}>Fijados</Link>
             </li>
             <li class="nav-item">
 
-              <Link class="nav-link active" aria-current="page" to="/nosotros" style={{ color: "white" }} state={setMiLogin.login.setmilogin} >Sobre Nosotros</Link>
+              <Link to="/nosotros"  class="nav-link active" aria-current="page" style={{ color: "white" }} 
+              state={{setmiLogin:login.setmiLogin}} >Sobre Nosotros</Link>
             </li>
 
             <li class="nav-item">

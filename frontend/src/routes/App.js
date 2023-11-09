@@ -10,7 +10,7 @@ import Registro from '../pages/registro'
 import Asistencia from '../pages/asistencia';
 import TyC from '../pages/tyc'
 import Fijados from '../pages/fijados'
-import Perfil from '../componentes/perfil';
+import Perfil from '../pages/perfil';
 function App() {
   return (
    <Router>

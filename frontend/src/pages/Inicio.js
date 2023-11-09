@@ -5,16 +5,15 @@ import jairo from '../imagenes/high-rise-buildings-free-photo.jpeg';
 import Productos from '../componentes/productos';
 
 
-function Inicio({ Login }) {
+function Inicio({ login }) {
 
 
     const navigate = useNavigate();
-    const [miLogin, setMiLogin] = useState(Login.setmilogin);
-    
+    const [miLogin, setMiLogin] = useState(login.setmiLogin);
+    console.log(miLogin)
   
     useEffect(() => {
-        console.log(miLogin)
-      if (miLogin === false) {
+      if (miLogin === "false") {
         console.log("La variable es false");
         navigate("/"); 
       }
@@ -23,7 +22,7 @@ function Inicio({ Login }) {
     
     return (
         <div className='Inicio ' class='body' style={{paddingLeft: '0px'}}>
-            <Menu login={{ setmilogin: miLogin }}/>
+            <Menu login={{ setmiLogin: miLogin }}/>
             <div id="home">
             <div style={{display: 'flex', justifyContent: 'center'}}>
             <img src={jairo} alt="imagen" style={{ width: "90vw", height:"50vh"}}></img>
@@ -53,7 +52,7 @@ function Inicio({ Login }) {
                 </button>
             </div>
             </div>
-            <Productos />
+            <Productos login={{ setmiLogin: miLogin }} />
          
         </div>
 

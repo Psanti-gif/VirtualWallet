@@ -19,7 +19,7 @@ function Saldo() {
     console.log("Sobrenosotros->",miLogin)
   
     useEffect(() => {
-      if (miLogin === false) {
+      if (miLogin === "false") {
         console.log("La variable es false");
         navigate("/"); 
       }
@@ -27,7 +27,7 @@ function Saldo() {
     
     return (
         <div id="Saldo">
-            <Menu/>
+            <Menu login={{ setmiLogin: miLogin }}/>
         <div style={{display:"flex", justifyContent:"space-around", borderRadius:"20px"}}>
             <img src={logo} style={{display:"flex",width:"30vh",paddingBottom:"40px", paddingTop:"80px"}}></img>
 

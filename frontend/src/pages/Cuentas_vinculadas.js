@@ -22,7 +22,7 @@ function Cuentas_vinculadas() {
     console.log("Sobrenosotros->",miLogin)
   
     useEffect(() => {
-      if (miLogin === false) {
+      if (miLogin === "false") {
         console.log("La variable es false");
         navigate("/"); 
       }

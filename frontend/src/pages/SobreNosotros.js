@@ -14,7 +14,7 @@ function Sobrenosotros() {
     console.log("Sobrenosotros->",miLogin)
   
     useEffect(() => {
-      if (miLogin === false) {
+      if (miLogin === "false") {
         console.log("La variable es false");
         navigate("/"); 
       }
@@ -23,7 +23,11 @@ function Sobrenosotros() {
     return (
         <div id="us" style={{ backgroundColor: "#F1F0F0" }}>
             <div className='Inicio ' class='body' style={{paddingLeft: '0px'}}>
-            <Menu />
+            <Menu login={{ setmiLogin: miLogin }}/>
+            
+
+
+
             </div>
             <div>
                 <SobreNosotros />

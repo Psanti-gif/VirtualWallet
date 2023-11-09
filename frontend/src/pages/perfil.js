@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import {useNavigate, useLocation  } from "react-router-dom";
 import Menu from '../componentes/menu'
-import Perfil from '../componentes/perfil'
+import PerfilP from '../componentes/perfil'
 
-function Perfilp(){
+function Perfil(){
     
   const location = useLocation()
   const { setmiLogin } = location.state
@@ -12,7 +12,7 @@ function Perfilp(){
   console.log("Sobrenosotros->",miLogin)
 
   useEffect(() => {
-    if (miLogin === false) {
+    if (miLogin === "false") {
       console.log("La variable es false");
       navigate("/"); 
     }
@@ -20,11 +20,11 @@ function Perfilp(){
   
     return(
         <div id="Perfil">
-            <Menu />   
-            <Perfil/>
+            <Menu login={{ setmiLogin: miLogin }}/>
+            <PerfilP/>
   
         </div>
     )
 }
 
-export default Perfilp;
+export default Perfil;

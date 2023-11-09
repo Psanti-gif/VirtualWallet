@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import Saldoimg from '../imagenes/cashless_technology_icon_194028.png';
 import Bancos from '../imagenes/cashless_society_icon_194027.png';
 import Transacciones from '../imagenes/cashless_icon_194058.png';
 import Footer from './footer';
 import { Link } from "react-router-dom";
-function Productos() {
+function Productos({ login }) {
+
+    const [miLogin, setMiLogin] = useState(login.setmiLogin);
+
     return (
         <div className='Productos' class="body">
             <div class="card-group">
@@ -17,7 +20,7 @@ function Productos() {
                             </p>
                         </div>
                         <div class="card-footer">
-                        <Link to={"/cuentas"}>
+                        <Link to={"/cuentas"} state={{setmiLogin:login.setmiLogin}}>
                             <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2">Seleccionar</button>
                         </Link>
                         </div>
@@ -32,7 +35,7 @@ function Productos() {
                             </p>
                         </div>
                         <div class="card-footer">
-                        <Link to={"sms:"}>
+                        <Link to={"/transacciones"} state={{setmiLogin:login.setmiLogin}}>
                             <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2">Seleccionar</button>
                         </Link>
                         </div>
@@ -47,7 +50,7 @@ function Productos() {
                             </p>
                         </div>
                         <div class="card-footer">
-                            <Link to={"/saldo"}>
+                            <Link to={"/saldo"} state={{setmiLogin:login.setmiLogin}}>
                                 <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2">Seleccionar</button>
                             </Link>
                         </div>
