@@ -5,20 +5,7 @@ import Menu from "../componentes/menu";
 
 
 function Fijados() {
-  const location = useLocation()
-  const { setmiLogin } = location.state
-  const navigate = useNavigate();
-  const [miLogin, setMiLogin] = useState(setmiLogin);
-  console.log("Fijados->",miLogin)
 
-
-  useEffect(() => {
-    if (miLogin === "false") {
-      console.log("La variable es false");
-      navigate("/"); 
-    }
-  }, [miLogin, navigate]);
-  
     return(
        <div className="Fijados">
         <Menu login={{ setmiLogin: miLogin }}/>

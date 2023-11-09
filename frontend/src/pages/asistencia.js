@@ -10,22 +10,6 @@ import "../styles/perfil.css";
 import Menu from "../componentes/menu";
 
 function Asistencia() {
-  const location = useLocation();
-  const {
-    setmiLogin
-  } = location.state;
-  const navigate = useNavigate();
-  const [miLogin, setMiLogin] = useState(setmiLogin);
-  console.log("Sobrenosotros->", miLogin);
-
-  useEffect(() => {
-    while (miLogin === "false") {
-      console.log("La variable es false");
-      navigate("/");
-    }
-  }, [miLogin, navigate]);
-  
-  console.log("Variable",miLogin,setMiLogin)
 
   return (
     <div className="Asistencia">

@@ -218,7 +218,7 @@ function Login() {
         </div>
       </section>
 
-      {miLogin === "true" && <Inicio login={{ setToken: token }} />}
+      {miLogin === "true" && <Inicio />}
     </div>
   );
 }

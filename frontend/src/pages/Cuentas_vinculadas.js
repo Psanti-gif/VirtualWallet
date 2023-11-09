@@ -13,20 +13,6 @@ import jesid from "../imagenes/jesid.jpg";
 
 
 function Cuentas_vinculadas() {
-
-    
-    const location = useLocation()
-    const { setmiLogin } = location.state
-    const navigate = useNavigate();
-    const [miLogin, setMiLogin] = useState(setmiLogin);
-    console.log("Sobrenosotros->",miLogin)
-  
-    useEffect(() => {
-      if (miLogin === "false") {
-        console.log("La variable es false");
-        navigate("/"); 
-      }
-    }, [miLogin, navigate]);
     
     return (
         <div id="cv" >

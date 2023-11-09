@@ -11,24 +11,6 @@ import bancolombia from '../imagenes/bancolombia.jpg';
 import Footer from '../componentes/footer';
 
 function Saldo() {
-
-    
-
-    
-    
-    const navigate = useNavigate();
-    const [miLogin, setMiLogin] = useState(false);
-  
-    useEffect(() => {
-      if (miLogin === false) {
-        const homeElement = document.getElementById("Saldo");
-        if (homeElement) {
-          homeElement.style.display = "none";
-        }
-        console.log("La variable es false");
-        navigate("/"); 
-      }
-    }, [miLogin, navigate]);
     
     return (
         <div id="Saldo"><Menu />

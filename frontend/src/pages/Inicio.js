@@ -6,23 +6,6 @@ import Productos from '../componentes/productos';
 
 
 function Inicio({ login }) {
-
-
-    const navigate = useNavigate();
-    const [miLogin, setMiLogin] = useState(login.setmiLogin);
-    console.log(miLogin)
-  
-    useEffect(() => {
-      if (miLogin === false) {
-        const homeElement = document.getElementById("home");
-        if (homeElement) {
-          homeElement.style.display = "none";
-        }
-        console.log("La variable es false");
-        navigate("/"); 
-      }
-    }, [miLogin, navigate]);
-
     
     return (
         <div className='Inicio ' class='body' style={{paddingLeft: '0px'}}>
