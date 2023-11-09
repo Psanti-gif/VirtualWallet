@@ -18,7 +18,7 @@ function Formulario(){
 
   async function peticionPost(txtnom, txtape, txtema, txttel, txtpas, txtcpas){
     console.log("nom ape ema tel pas cpas -->",txtnom, txtape, txtema, txttel, txtpas, txtcpas );
-    await axios.post('http://localhost:4001/api/usuarios/registro', [txtnom, txtape, txtema, txttel, txtpas])
+    await axios.post('https://backend-tau-nine.vercel.app/api/usuarios/registro', [txtnom, txtape, txtema, txttel, txtpas])
         .then(response => { 
             if(response){
               setMiRegistro("true");

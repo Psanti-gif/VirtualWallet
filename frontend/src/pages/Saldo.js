@@ -10,6 +10,7 @@ import '../styles/styles1.css';
 import bancolombia from '../imagenes/bancolombia.jpg';
 import Footer from '../componentes/footer';
 
+
 function Saldo() {
     function handleBanco() {
         document.getElementById("banco3").style.display = "none"
@@ -124,7 +125,7 @@ function Saldo() {
                                                 <h1>$2.085.000</h1>
                                             </div>
                                         </button>
-
+                                        
                                     </div>
                                 </div>
 

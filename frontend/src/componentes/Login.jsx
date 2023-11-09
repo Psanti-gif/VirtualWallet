@@ -16,7 +16,7 @@ function Login(){
 
   async function peticionPost(txtema,txttel,txtpas) {
     console.log("ema y tel -->", txtema, txtpas);
-    await axios.post('http://localhost:4001/api/usuarios/autenticacion', [txtema, txttel, txtpas])
+    await axios.post('https://backend-tau-nine.vercel.app/api/usuarios/autenticacion', [txtema, txttel, txtpas])
         .then(response => { 
             if(response){
               setMiLogin("true");
