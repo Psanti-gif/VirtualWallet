@@ -4,15 +4,13 @@ import Menu from "./menu";
 
 
 
-function Perfil({Perfil}) {
+function Perfil() {
 
-  const {nom,setNom}=useState(Perfil.setNom)
-
-  console.log(Perfil)
+  
 
   return (
     <div className="body">
-      <Menu />
+     
       
       <div className="page-content page-container" id="page-content" > 
         <div className="padding">

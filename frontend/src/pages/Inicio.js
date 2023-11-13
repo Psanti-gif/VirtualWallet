@@ -9,7 +9,7 @@ function Inicio() {
     
     return (
         <div className='Inicio ' class='body' style={{paddingLeft: '0px'}}>
-            <Menu login={{ setmiLogin: miLogin }}/>
+            <Menu />
             <div id="home">
             <div style={{display: 'flex', justifyContent: 'center'}}>
             <img src={jairo} alt="imagen" style={{ width: "90vw", height:"50vh"}}></img>
@@ -39,7 +39,7 @@ function Inicio() {
                 </button>
             </div>
             </div>
-            <Productos login={{ setmiLogin: miLogin }} />
+            <Productos/>
          
         </div>
 

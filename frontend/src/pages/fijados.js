@@ -8,7 +8,7 @@ function Fijados() {
 
     return(
        <div className="Fijados">
-        <Menu login={{ setmiLogin: miLogin }}/>
+        <Menu/>
         <h1>Pagina en construcción</h1>
        </div>
     )

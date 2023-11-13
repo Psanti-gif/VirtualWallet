@@ -13,7 +13,7 @@ function Asistencia() {
 
   return (
     <div className="Asistencia">
-      <Menu login={{ setmiLogin: miLogin }} />
+      <Menu/>
       <h1>Pagina en construcción</h1>
     </div>
   );
