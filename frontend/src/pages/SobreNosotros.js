@@ -9,7 +9,7 @@ function Sobrenosotros() {
     return (
         <div id="us" style={{ backgroundColor: "#F1F0F0" }}>
             <div className='Inicio ' class='body' style={{paddingLeft: '0px'}}>
-            <Menu login={{ setmiLogin: miLogin }}/>
+            <Menu/>
             
 
 

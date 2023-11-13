@@ -12,7 +12,29 @@ import Footer from '../componentes/footer';
 
 
 function Saldo() {
-    
+
+    function handleBanco(){
+        document.getElementById("banco1").style.display = "none";
+        document.getElementById("saldo1").style.display = "inline-block";
+    }
+    function handleBanco2(){
+        document.getElementById("banco2").style.display = "none";
+        document.getElementById("saldo2").style.display = "inline-block";
+    }
+    function handleBanco3(){
+        document.getElementById("banco3").style.display = "none";
+        document.getElementById("saldo3").style.display = "inline-block";
+    }
+    function handleSaldo(){
+        document.getElementById("banco1").style.display = "block";
+        document.getElementById("saldo1").style.display = "none";
+        document.getElementById("banco2").style.display = "inline-block";
+        document.getElementById("saldo2").style.display = "none";
+        document.getElementById("banco3").style.display = "inline-block";
+        document.getElementById("saldo3").style.display = "none";
+    }
+
+
     return (
         <div id="Saldo"><Menu />
         <div style={{display:"flex", justifyContent:"space-around", borderRadius:"20px"}}>
@@ -43,7 +65,7 @@ function Saldo() {
 
                                 <div class="col-6 col-lg-4 col-md-4" style={{ marginTop: "20px", marginBottom: "10px", padding: "6px" }}>
                                     <div class="card" id='banco1' style={{ width: "20vh;" }}>
-                                        <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2" style={{ padding: "4px" }} onClick={handleBanco3}>
+                                        <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2" style={{ padding: "4px" }} onClick={handleBanco}>
                                             <div class="banco1">
                                                 <img src={bancoP} class="card-img-top" alt="..." />
                                             </div>
@@ -52,7 +74,7 @@ function Saldo() {
                                     </div>
                                     <div class="card" id='saldo1' style={{ display: "none" }}>
                                         <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2" style={{ padding: "4px" }} onClick={handleSaldo}>
-                                            <div class="banco1">
+                                            <div class="saldo1">
                                                 <h1>$2.085.000</h1>
                                             </div>
                                         </button>
@@ -70,7 +92,7 @@ function Saldo() {
                                     </div>
                                     <div class="card" id='saldo2' style={{ display: "none" }}>
                                         <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2" style={{ padding: "4px" }} onClick={handleSaldo}>
-                                            <div class="banco2">
+                                            <div class="saldo2">
                                                 <h1>$2.085.000</h1>
                                             </div>
                                         </button>
@@ -79,7 +101,7 @@ function Saldo() {
                                 </div>
                                 <div class="col-lg-4 col-md-4" style={{ marginTop: "20px", marginBottom: "10px", padding: "6px" }}>
                                     <div class="card" id='banco3' style={{ width: "20vh;" }}>
-                                        <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2" style={{ padding: "4px" }} onClick={handleBanco}>
+                                        <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2" style={{ padding: "4px" }} onClick={handleBanco3}>
                                             <div class="banco3">
                                                 <img src={bancolombia} class="card-img-top" alt="..." />
                                             </div>
@@ -88,7 +110,7 @@ function Saldo() {
                                     </div>
                                     <div class="card" id='saldo3' style={{ display: "none" }}>
                                         <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2" style={{ padding: "4px" }} onClick={handleSaldo}>
-                                            <div class="banco3">
+                                            <div class="saldo3">
                                                 <h1>$2.085.000</h1>
                                             </div>
                                         </button>

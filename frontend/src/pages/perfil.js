@@ -7,7 +7,7 @@ function Perfil(){
   
     return(
         <div id="Perfil">
-            <Menu login={{ setmiLogin: miLogin }}/>
+            <Menu/>
             <PerfilP/>
   
         </div>
