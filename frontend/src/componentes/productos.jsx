@@ -17,7 +17,7 @@ function Productos() {
                             </p>
                         </div>
                         <div class="card-footer">
-                        <Link to={"/cuentas"} state={{setmiLogin:login.setmiLogin}}>
+                        <Link to={"/cuentas"}>
                             <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2">Seleccionar</button>
                         </Link>
                         </div>
@@ -32,7 +32,7 @@ function Productos() {
                             </p>
                         </div>
                         <div class="card-footer">
-                        <Link to={"/transacciones"} state={{setmiLogin:login.setmiLogin}}>
+                        <Link to={"/transacciones"}>
                             <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2">Seleccionar</button>
                         </Link>
                         </div>
@@ -47,7 +47,7 @@ function Productos() {
                             </p>
                         </div>
                         <div class="card-footer">
-                            <Link to={"/saldo"} state={{setmiLogin:login.setmiLogin}}>
+                            <Link to={"/saldo"}>
                                 <button type="submit" class="btn btn-outline-light bg-dark-x flex-grow-1 mr-2">Seleccionar</button>
                             </Link>
                         </div>
