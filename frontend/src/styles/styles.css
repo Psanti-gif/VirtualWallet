@@ -17,6 +17,16 @@ body{
     overflow-y: hidden !important;
 }
 
+.images{
+    max-width: 40vw !important;
+    max-height: 40vw !important;
+}
+
+.divss{
+    max-width: 80vw;
+    max-height: 80vw;
+}
+
 .noscrollx{
     overflow-x: hidden !important;
 }
@@ -219,8 +229,8 @@ svg {
 div.TyC{
     text-align:center;
     background-color:rgb(222, 248, 250);
-    margin-left: 20vh;
-    margin-right: 20vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
     margin-top: 5vh;
     margin-bottom: 5vh;
     border-radius: 3%;
