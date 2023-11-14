@@ -2,17 +2,17 @@ import React from "react";
 import "../styles/styles.css";
 import Menu from "../componentes/menu";
 import { Link } from "react-router-dom";
-import primera from "";
-import segunda from "";
-import tercera from "";
-import cuarta from "";
-import quinta from "";
-import sexta from ""; 
-import septima from "";
-import octaba from ""; 
-import novena from "";
-import decima from "";
-import onceaba from "";
+import primera from '../imagenes/1ra.png';
+import segunda from '../imagenes/2da.png';
+import tercera from '../imagenes/3ra.png';
+import cuarta from '../imagenes/4ta.png';
+import quinta from '../imagenes/5ta.png';
+import sexta from '../imagenes/6ta.png'; 
+import septima from'../imagenes/7ma.png';
+import octaba from '../imagenes/8ba.png'; 
+import novena from '../imagenes/9na.png';
+import decima from '../imagenes/10ma.png';
+import onceaba from '../imagenes/11ba.png';
 
 
 
