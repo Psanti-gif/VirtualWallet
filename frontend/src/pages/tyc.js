@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/styles.css";
+import "../styles/stylestyc.css";
 import Menu from "../componentes/menu";
 import { Link } from "react-router-dom";
 import primera from '../imagenes/1ra.png';
@@ -23,10 +23,15 @@ function TyC() {
        <div className="TyC">
          <br></br>
           <br></br>
+          <div className="titulo">
+          <b className="la_v">V</b><b className="la_w">W</b>
+          </div>
+          <br></br>
+          <br></br>
           <div>
           <h2>TÉRMINOS Y CONDICIONES DE USO DE LA BILLETERA VIRTUAL</h2> 
           </div>
-          <img src={primera} alt="1 imagen"/>
+          <img src={primera} alt="1 imagen" style={{width:"25vh",height:"25vh"}}/>
           <br></br>
           <div>
           <h4 className="Tyc">Fecha de última actualización: 04 de agosto de 2023</h4> 
@@ -36,7 +41,7 @@ function TyC() {
           <div>
           <h2>ACEPTACIÓN DE LOS TÉRMINOS</h2> 
           </div>
-          <img src={segunda} alt="2 imagen"/>
+          <img src={segunda} alt="2 imagen" style={{width:"25vh",height:"25vh"}}/>
           <br></br>
           <div>
           <h4 className="Tyc">Al utilizar nuestra Billetera Virtual, usted acepta cumplir con estos términos y condiciones. Si no está de acuerdo con estos términos, no debe utilizar nuestra Billetera Virtual.</h4> 
@@ -45,7 +50,7 @@ function TyC() {
           <div>
           <h2>REGISTRO</h2> 
           </div>
-          <img src={tercera} alt="3 imagen"/>
+          <img src={tercera} alt="3 imagen"style={{width:"25vh",height:"25vh"}}/>
           <br></br>
           <div>
           <h4 className="Tyc">Para utilizar nuestra Billetera Virtual, debe registrarse proporcionando una dirección de correo electrónico válida y crear una contraseña segura. Usted es responsable de mantener la confidencialidad de su cuenta y contraseña.
@@ -55,7 +60,7 @@ function TyC() {
           <div>
           <h2>USO DEL SERVICIO</h2> 
           </div>
-          <img src={cuarta} alt="4 imagen"/>
+          <img src={cuarta} alt="4 imagen"style={{width:"25vh",height:"25vh"}}/>
           <br></br>
           <h4 className="Tyc">La Billetera Virtual solo puede ser utilizada para realizar transacciones legales. No debe utilizarse para fines ilegales o malintencionados.
 </h4> 
@@ -63,7 +68,7 @@ function TyC() {
           <div>
           <h2>SEGURIDAD</h2> 
           </div>
-          <img src={quinta} alt="5 imagen"/>
+          <img src={quinta} alt="5 imagen"style={{width:"25vh",height:"25vh"}}/>
           <br></br>
           <h4 className="Tyc">Tomamos medidas razonables para proteger su información, pero no podemos garantizar la seguridad total de su cuenta. Usted es responsable de mantener la seguridad de su cuenta.
 </h4>
@@ -71,7 +76,7 @@ function TyC() {
           <div>
           <h2>RESPONSABILIDAD</h2> 
           </div>
-          <img src={sexta} alt="6 imagen"/>
+          <img src={sexta} alt="6 imagen"style={{width:"25vh",height:"25vh"}}/>
           <br></br>
           <div>
           <h4 className="Tyc">No somos responsables de ninguna pérdida o daño que pueda resultar del uso de nuestra Billetera Virtual.</h4>
@@ -80,7 +85,7 @@ function TyC() {
           <div>
           <h2>CAMBIOS EN EL SERVICIO</h2> 
           </div>
-          <img src={septima} alt="7 imagen"/>
+          <img src={septima} alt="7 imagen"style={{width:"25vh",height:"25vh"}}/>
           <br></br>
           <div>
           <h4 className="Tyc">Nos reservamos el derecho de modificar o interrumpir el servicio en cualquier momento sin previo aviso.</h4>
@@ -89,7 +94,7 @@ function TyC() {
           <div>
           <h2>PRIVACIDAD</h2> 
           </div>
-          <img src={octaba} alt="8 imagen"/>
+          <img src={octaba} alt="8 imagen"style={{width:"25vh",height:"25vh"}}/>
           <br></br>
           <div>
           <h4 className="Tyc">Su privacidad es importante para nosotros. Por favor, consulte nuestra Política de Privacidad para obtener más información sobre cómo recopilamos, usamos y protegemos su información.</h4>
@@ -98,7 +103,7 @@ function TyC() {
           <div>
           <h2>DERECHOS DE PROPIEDAD</h2> 
           </div>
-          <img src={novena} alt="9 imagen"/>
+          <img src={novena} alt="9 imagen"style={{width:"25vh",height:"25vh"}}/>
           <br></br>
           <div>
           <h4 className="Tyc">Todos los derechos de propiedad intelectual en y para la Billetera Virtual son propiedad de nosotros o de nuestros licenciantes.</h4>
@@ -107,7 +112,7 @@ function TyC() {
           <div>
           <h2>TERMINACIÓN</h2> 
           </div>
-          <img src={decima} alt="10 imagen"/>
+          <img src={decima} alt="10 imagen"style={{width:"25vh",height:"25vh"}}/>
           <br></br>
           <div>
           <h4 className="Tyc">Nos reservamos el derecho de suspender o terminar su acceso a la Billetera Virtual en cualquier momento por cualquier motivo.</h4>
@@ -116,7 +121,7 @@ function TyC() {
           <div>
           <h2>LEY APLICABLE</h2> 
           </div>
-          <img src={onceaba} alt="11 imagen"/>
+          <img src={onceaba} alt="11 imagen"style={{width:"25vh",height:"25vh"}}/>
           <br></br>
           <div>
           <h4 className="Tyc">Estos términos se rigen por la ley del país en el que se encuentra nuestra empresa. Cualquier disputa relacionada con estos términos será resuelta en los tribunales de ese país.</h4>
@@ -127,7 +132,7 @@ function TyC() {
           </div>
           <br></br>
           <br></br>
-          <button type="button" class="btn btn-secondary"><h1>CONTINUAR</h1></button>
+          <Link to={"/"}><button type="button" class="btn btn-secondary"><h1>CONTINUAR</h1></button></Link>
           <br></br>
           <br></br>
 

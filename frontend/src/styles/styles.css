@@ -35,6 +35,7 @@ body{
     font-family: 'Spartan', sans-serif;
     font-weight: 300;
     color: var(--light);
+    background-color: white;
 
 }
 
@@ -214,21 +215,6 @@ svg {
 
 .btn-edit-profile:hover {
     background-color: #0056b3;
-}
-
-div.TyC{
-    text-align:center;
-    background-color:rgb(222, 248, 250);
-    margin-left: 20vh;
-    margin-right: 20vh;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    border-radius: 3%;
-    
-}
-h4.Tyc{
-    margin-left: 4vh;
-    margin-right: 4vh ;
 }
 
 

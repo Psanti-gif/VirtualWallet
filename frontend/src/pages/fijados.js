@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {useNavigate, useLocation } from "react-router-dom";
-import "../styles/perfil.css";
+import "../styles/styles1.css";
 import Menu from "../componentes/menu";
 
 
